@@ -1,7 +1,7 @@
 import pytest
 
 
-@pytest.mark.parametrize()
+# @pytest.mark.parametrize()
 def test_1():
     pass
 
