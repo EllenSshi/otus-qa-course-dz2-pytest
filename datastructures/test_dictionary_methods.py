@@ -53,6 +53,6 @@ def test_len_decrease():
         "pantry": 3,
         "diningroom": 10
     }
-    l = len(testdic)
+    testdic_len = len(testdic)
     testdic.popitem()
-    assert len(testdic) == l-1
+    assert len(testdic) == testdic_len-1

@@ -5,9 +5,7 @@ import pytest
 @pytest.mark.parametrize("itm", ["apple", "pineapple", "watermelon"])
 def test_appended_item(itm):
     testlist = ["item1", "item2", "item3", "item4"]
-    list_len = len(testlist)
     testlist.append(itm)
-    print(testlist)
     assert testlist[-1] == itm
 
 

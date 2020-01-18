@@ -2,7 +2,8 @@ import pytest
 
 
 @pytest.mark.str
-@pytest.mark.parametrize("input_string, expected_result", [("hello", 5), ("testing", 7), ("course", 6)])
+@pytest.mark.parametrize("input_string, expected_result",
+                         [("hello", 5), ("testing", 7), ("course", 6)])
 def test_len_of_str(input_string, expected_result):
     assert len(input_string) == expected_result
 
@@ -15,19 +16,19 @@ def test_substring_in_string():
 
 @pytest.mark.str
 def test_string_is_in_appercase():
-    s = "This string should be in uppercase"
-    s = s.upper()
-    assert s.isupper()
+    teststr = "This string should be in uppercase"
+    teststr = teststr.upper()
+    assert teststr.isupper()
 
 
 @pytest.mark.str
 def test_string_without_spaces():
-    s = "  This_string_should_be_without_any_whitespaces    "
-    s = s.strip()
-    assert " " not in s
+    teststr = "  This_string_should_be_without_any_whitespaces    "
+    teststr = teststr.strip()
+    assert " " not in teststr
 
 
 @pytest.mark.str
 def test_only_digits_string():
-    s = "3567543245"
-    assert s.isdigit()
+    teststr = "3567543245"
+    assert teststr.isdigit()
